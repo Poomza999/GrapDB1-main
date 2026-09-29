@@ -119,7 +119,7 @@ with st.sidebar:
 
     st.divider()
     st.caption("Bachelor-level Graph Database Project")
-    
+
 st.markdown(
     """
     <div class="hero">
