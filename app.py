@@ -95,16 +95,31 @@ def explain_reason(row: dict) -> str:
 require_connection()
 
 with st.sidebar:
-    st.sidebar.image("iamge/1.jpg", width=50)
-    st.markdown("## 📚 GraphBook")
+    col1, col2 = st.columns([1, 4])
+
+    with col1:
+        st.image("Image/1.jpg", width=45)
+
+    with col2:
+        st.markdown("## GraphBook")
+
     st.caption("Neo4j Aura + Streamlit")
+
     page = st.radio(
         "เมนู",
-        ["Dashboard", "Recommendations", "Book Search", "Borrow / Rate", "Graph Explorer", "Admin / Setup"],
+        [
+            "Dashboard",
+            "Recommendations",
+            "Book Search",
+            "Borrow / Rate",
+            "Graph Explorer",
+            "Admin / Setup",
+        ],
     )
+
     st.divider()
     st.caption("Bachelor-level Graph Database Project")
-
+    
 st.markdown(
     """
     <div class="hero">
