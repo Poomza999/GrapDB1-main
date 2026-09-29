@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
@@ -98,7 +99,9 @@ with st.sidebar:
     col1, col2 = st.columns([1, 4])
 
     with col1:
-        st.image("Image/1.jpg", width=45)
+        image_path = Path(__file__).parent / "Image" / "1.jpg"
+
+        st.sidebar.image(str(image_path), width=45)
 
     with col2:
         st.markdown("## GraphBook")
