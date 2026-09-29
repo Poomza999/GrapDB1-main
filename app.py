@@ -101,7 +101,7 @@ with st.sidebar:
     with col1:
         image_path = Path(__file__).parent / "image" / "1.jpg"
 
-        st.sidebar.image(str(image_path), width=45)
+        st.sidebar.image(str(image_path), width=100)
 
     with col2:
         st.markdown("## GraphBook")
