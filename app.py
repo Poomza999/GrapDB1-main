@@ -99,7 +99,7 @@ with st.sidebar:
     col1, col2 = st.columns([1, 4])
 
     with col1:
-        image_path = Path(__file__).parent / "Image" / "1.jpg"
+        image_path = Path(__file__).parent / "image" / "1.jpg"
 
         st.sidebar.image(str(image_path), width=45)
 
