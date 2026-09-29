@@ -95,6 +95,7 @@ def explain_reason(row: dict) -> str:
 require_connection()
 
 with st.sidebar:
+    st.sidebar.image("iamge/1.jpg", width=50)
     st.markdown("## 📚 GraphBook")
     st.caption("Neo4j Aura + Streamlit")
     page = st.radio(
